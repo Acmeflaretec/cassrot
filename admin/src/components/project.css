@@ -1,0 +1,247 @@
+.main-content > div {
+    width: 100%;
+  }
+  
+  .main-content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .uk-navbar-nav {
+    justify-content: center;
+    font-family: "Catamaran", sans-serif;
+    gap: 15px;
+    margin-bottom: 35px;
+  }
+  
+  .uk-navbar-nav > li {
+    padding: 0;
+    min-width: 100px;
+  }
+  
+  .uk-navbar-nav > li > button {
+    padding: 15px 35px;
+    display: block;
+    background-color: #fff;
+    color: #222;
+    font-size: 15px;
+    min-height: auto;
+    font-weight: 600;
+    box-shadow: 0 0 25px #cccccc42;
+    border-radius: 7px;
+    transition: 0.5s all ease-in-out;
+  }
+  
+  .uk-navbar-nav > li > button:hover,
+  .uk-navbar-nav > li.uk-active > button {
+    background-color: #7b68ee;
+    color: #fff;
+  }
+  
+  .img-gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+  }
+  
+  .img-gallery-container > li {
+    position: relative;
+    padding: 10px;
+    margin-top: 5px !important;
+  }
+  
+  .img-gal {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s all ease-in-out;
+    border-radius: 6px;
+  }
+  .img-gal2 {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s all ease-in-out;
+    border-radius: 6px;
+  }
+  
+  .img-gallery-container > li:hover > img {
+    filter: brightness(0.4) blur(3px);
+  }
+  
+  .float-gallery-content {
+    position: absolute;
+    width: 90%;
+    z-index: -1;
+    background: #fff;
+    padding: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 5px;
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s all ease-in-out;
+    overflow: hidden;
+  }
+  
+  .img-gallery-container > li:hover .float-gallery-content {
+    bottom: 20px;
+    opacity: 1;
+    visibility: visible;
+    z-index: 9;
+  }
+  
+  .uk-block {
+    display: block;
+  }
+  
+  .float-gallery-content .content {
+    padding: 8px 15px;
+  }
+  
+  .float-gallery-content .content > a {
+    color: #212121;
+    position: relative;
+    bottom: -50px;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  
+  .float-gallery-content .content > a:hover {
+    color: #7b68ee;
+  }
+  
+  /* button {
+    border: 0;
+    height: 100%;
+    padding: 5px 15px;
+    background: #7b68ee;
+    font-size: 30px;
+    color: #fff;
+    position: relative;
+    right: -100px;
+    opacity: 0;
+    transition: all 0.5s;
+  } */
+  
+  .highlight {
+    color: #7b68ee;
+    font-weight: 600;
+    position: relative;
+    left: -100px;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  
+  .img-gallery-container > li:hover .highlight {
+    left: 0;
+    opacity: 1;
+    transition-delay: 0.1s;
+  }
+  
+  .img-gallery-container > li:hover button {
+    right: 0;
+    opacity: 1;
+    transition-delay: 0.1s;
+  }
+  
+  .img-gallery-container > li:hover .content > a {
+    bottom: 0;
+    opacity: 1;
+    transition-delay: 0.1s;
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .img-gal {
+      height: 300px;
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    .img-gal {
+      height: 225px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .img-gal {
+      height: 125px;
+    }
+  }
+  .modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .modal-details {
+    margin-top: 20px;
+    
+  }
+  
+  .modal-details .highlight {
+    color: #7b68ee;
+    font-weight: 600;
+  }
+  
+  .modal-details p {
+    margin-top: 10px;
+    color: #212121;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+  }
+  .sortDetails{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  
+
+
+
+
+  .active1 {
+    background-color: #7b68ee;
+    color: #fff;
+  }
