@@ -4,7 +4,7 @@ import axios from 'axios';
 import ImageForm from '../components/ImageForm';
 import ImageList from '../components/ImageList';
 import Pagination from '../components/Pagination';
-const url = 'http://localhost:5000' ; 
+const url = 'https://backende.acmeflare.in' ; 
 
 const Dashboard = () => {
   const [images, setImages] = useState([]);

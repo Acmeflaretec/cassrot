@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Grid, Card, CardMedia, CardContent, Typography, Button } from '@mui/material';
 import './project.css';
 
-const url = 'http://localhost:5000';
+const url = 'https://backende.acmeflare.in';
 const ImageList = ({ images, deleteImage, editImage }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState('');

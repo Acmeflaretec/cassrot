@@ -6,7 +6,7 @@ import { Button } from "../atoms/Button";
 import {CaretLeft, CaretRight } from "@phosphor-icons/react";
 import axios from "axios";
 
-const url = 'http://localhost:5000';
+const url = 'https://backende.acmeflare.in';
 
 type Package = {
   _id: string;

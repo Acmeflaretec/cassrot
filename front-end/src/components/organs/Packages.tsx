@@ -24,7 +24,7 @@ const Packages = () => {
   const [imageDetails, setImageDetails] = useState<Package | null>(null);
   const [currentPage, setCurrentPage] = useState(1); 
   const imagesPerPage = 9;
-  const url = 'http://localhost:5000'; 
+  const url = 'https://backende.acmeflare.in'; 
 
   useEffect(() => {
     fetchImages();
