@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { Image } from "../atoms/Image";
 import { Button } from "../atoms/Button"
-import Logo from "../../assets/logo1.png"
+import Logo from "../../assets/logo.jpg"
 import { NavButtons, NavLinks } from "../particles/DataLists"
 import { List } from "../atoms/List";
 import { NavLink, useNavigate } from "react-router-dom";
@@ -37,8 +37,8 @@ const NavBar = () => {
         <header className="w-full h-auto bg-transparent overflow-x-hidden fixed z-50 top-0 left-0">
             <Slide direction="down">
                 <nav className={`w-full md:h-24 h-20 ${navBarColor ? "bg-white" : "bg-transparent"} lg:px-24 md:px-12 px-8 flex justify-between items-center`}>
-                    {/* <Image as="a" href="/" className="md:h-10 h-8" image={Logo} alt="Logo" /> */}
-                    <span className="md:h-10 h-8"><strong>CASSROT</strong> </span>
+                    <Image as="a" href="/" className="md:h-12 h-10" image={Logo} alt="Logo" />
+                    {/* <span className="md:h-12 h-10"><strong>CASSROT</strong> </span> */}
                     <div className="lg:flex hidden items-center gap-20">
                         <ul className="flex items-center justify-center gap-8">
                             {

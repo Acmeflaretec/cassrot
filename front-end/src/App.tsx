@@ -10,6 +10,7 @@ import Home from "./components/pages/Home";
 import { useEffect } from "react";
 import Footer from "./components/organs/Footer";
 import Package from "./components/pages/Package";
+import Contact from "./components/pages/Contact";
 
 function App() {
   const directory = useLocation();
@@ -22,9 +23,11 @@ function App() {
   return (
     <div className="w-full bg-white text-gray-950 font-poppins">
       <NavBar />
+      <div className="mb-20"></div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Packages" element={<Package /> } />
+        <Route path="/Contact" element={<Contact /> } />
       </Routes>
       <Footer />
     </div>

@@ -1,11 +1,12 @@
 import { Image } from "../atoms/Image"
-import logo from "../../assets/logo2.png"
+import logo from "../../assets/logo.jpg"
 import { Text } from "../atoms/Text"
 import { FooterTexts } from "../particles/DataLists"
 import { List } from "../atoms/List"
 import { Link } from "react-router-dom"
 import { FacebookLogo, InstagramLogo, TwitterLogo } from "@phosphor-icons/react"
 import app from "../../assets/appdownload.png"
+import whatsappIcon from "../../assets/whatsapp.png"; 
 
 
 const Footer = () => {
@@ -13,9 +14,9 @@ const Footer = () => {
         <footer className="w-full flex flex-col bg-white">
             <section className="w-full h-auto grid lg:grid-cols-5 md:grid-cols-3 lg:px-20 md:px-12 px-6 py-16 gap-7 md:gap-4 lg:gap-0">
                 <div className="flex flex-col items-start gap-4">
-                    {/* <Image className="w-28" image={logo} alt="Logo" as="a" href="/" /> */}
-                    <span><strong>CASSROT</strong> </span>
-                    <Text className="text-sm text-color4"  as="p">
+                    <Image className="w-28" image={logo} alt="Logo" as="a" href="/" />
+                    {/* <span><strong>CASSROT</strong> </span> */}
+                    <Text className="text-sm text-color4" as="p">
                         {FooterTexts.underLogoText}
                     </Text>
                 </div>
@@ -96,6 +97,9 @@ const Footer = () => {
             <a href="https://acmeflare.in"><Text className="text-center bg-color4 text-white text-xs font-light">
                 Designed By Acmeflare.
             </Text></a>
+            <a href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER_HERE" target="_blank" rel="noopener noreferrer">
+                <img src={whatsappIcon} alt="WhatsApp" className="fixed bottom-4 right-4 h-20 w-20 cursor-pointer" />
+            </a>
         </footer>
     )
 }

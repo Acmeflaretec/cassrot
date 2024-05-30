@@ -159,34 +159,31 @@ export const NewsletterTexts = {
 }
 
 export const FooterTexts = {
-    underLogoText: "At CASSROT, we are  committed to providing exceptional transportation services, including reliable taxi rides and customized package trips. Our focus is on delivering comfort, safety, and punctuality for all your travel needs. Trust us to make your journeys memorable and stress-free.",
+    underLogoText: "At CASSROT, we are  committed to providing exceptional transportation services, including reliable taxi rides and customized package trips. Our focus is on delivering comfort, safety, and punctuality for all your travel needs.",
     quickLinks: {
         caption: "Quick Links",
         links: [
             {
-                name: "Destination",
+                name: "Home",
                 url: "/"
             },
             {
-                name: "Hotels",
+                name: "Packages",
+                url: "/Packages"
+            },
+            {
+                name: "Contact",
+                url: "/Contact"
+            },
+            {
+                name: "Help",
                 url: "/"
             },
             {
-                name: "Flights",
-                url: "/"
-            },
-            {
-                name: "Bookings",
-                url: "/"
-            },
-            {
-                name: "Login",
-                url: "/"
-            },
-            {
-                name: "Signup",
+                name: "T&C",
                 url: "/"
             }
+            
         ]
     },
     contacts: {

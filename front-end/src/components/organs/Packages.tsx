@@ -60,7 +60,7 @@ const Packages = () => {
   };
 
   return (
-    <section className="bg-bg_light_primary pt-10" id="projects">
+    <section className="bg-bg_light_primary" id="projects">
       <Image image={GroupOfPlus} alt="Vector" className="absolute top-20 right-4 lg:h-36 h-24" />
       <div className="md:container px-5 pt-14 min-h-screen flex flex-col justify-between">
         <div>
