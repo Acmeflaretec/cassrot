@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import DetailsBar from '../organs/DetailsBar';
 import InputSide from '../organs/InputSide';

@@ -1,9 +1,9 @@
-import React, { useCallback, useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 import { Text } from "../atoms/Text";
 import Slider from "react-slick";
 import { Card } from "../molecules/Card";
 import { Button } from "../atoms/Button";
-import { AirplaneTilt, CaretLeft, CaretRight } from "@phosphor-icons/react";
+import {CaretLeft, CaretRight } from "@phosphor-icons/react";
 import axios from "axios";
 
 const url = 'http://localhost:5000';

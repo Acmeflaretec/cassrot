@@ -1,4 +1,3 @@
-import React from 'react'
 import Packages from '../organs/Packages'
 import NewsLetter from "../organs/NewsLetter"
 
