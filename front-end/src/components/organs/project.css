@@ -41,7 +41,7 @@
 .float-gallery-content {
   position: absolute;
   width: 90%;
-  z-index: -1;
+  /* z-index: -1; */
   background: #fff;
   padding: 0;
   margin: 0 auto;
@@ -49,10 +49,11 @@
   right: 0;
   bottom: 0;
   border-radius: 5px;
-  opacity: 0;
-  visibility: hidden;
+  /* opacity: 0; */
+  /* visibility: hidden; */
   transition: 0.3s all ease-in-out;
   overflow: hidden;
+  border: 1px solid gray;
 }
 
 .img-gallery-container > li:hover .float-gallery-content {
@@ -65,9 +66,9 @@
 .highlight {
   color: #7b68ee;
   font-weight: 600;
-  position: relative;
-  left: -100px;
-  opacity: 0;
+  /* position: relative; */
+  /* left: -100px; */
+  /* opacity: 0; */
   transition: all 0.5s;
 }
 
