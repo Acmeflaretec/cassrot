@@ -97,7 +97,7 @@ const Footer = () => {
             <a href="https://acmeflare.in"><Text className="text-center bg-color4 text-white text-xs font-light">
                 Designed By Acmeflare.
             </Text></a>
-            <a href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER_HERE" target="_blank" rel="noopener noreferrer">
+            <a href="https://api.whatsapp.com/send?phone=6238685331" target="_blank" rel="noopener noreferrer">
                 <img src={whatsappIcon} alt="WhatsApp" className="fixed bottom-4 right-4 h-20 w-20 cursor-pointer" />
             </a>
         </footer>

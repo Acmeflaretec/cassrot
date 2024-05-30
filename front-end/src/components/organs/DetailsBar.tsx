@@ -103,14 +103,16 @@ const DetailsBar = () => {
         <TextTwo>Fill up the form and our team will get back to you within 24 hours</TextTwo>
       </TextWrapper>
       <div>
-        <ContactsWrapper href="tel:+233543201893">
+        
+
+        <ContactsWrapper href="tel:9747376383">
           <Icon.Phone size={15} color="rgb(252, 113, 137)" />
-          <ContactText>+233543201893</ContactText>
+          <ContactText>+91 9747376383</ContactText>
         </ContactsWrapper>
 
-        <ContactsWrapper href="mailto:aljay3334@gmail.com">
+        <ContactsWrapper href="mailto:cassrot@gmail.com">
           <Icon.Mail size={15} color="rgb(252, 113, 137)" />
-          <ContactText>aljay3334@gmail.com</ContactText>
+          <ContactText>cassrot@gmail.com</ContactText>
         </ContactsWrapper>
       </div>
 

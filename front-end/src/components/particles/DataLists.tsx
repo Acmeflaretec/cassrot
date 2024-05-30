@@ -190,20 +190,20 @@ export const FooterTexts = {
         caption: "Contacts",
         links: [
             {
-                name: "FAQs",
+                name: "Airport Rd, near HP Pump, Vidya Nagar Colony, Thrikkakara, Kaipadamugal, Kochi, Kerala 682021",
                 url: "/"
             },
             {
-                name: "Help",
-                url: "/"
+                name: "+91 9747376383",
+                url: "tel:9747376383"
             },
             {
-                name: "Policies",
-                url: "/"
+                name: "+91 6238685331",
+                url: "tel:6238685331"
             },
             {
-                name: "Terms & Conditions",
-                url: "/"
+                name: "cossrot@gmail.com",
+                url: "mailto:cossrot@gmail.com"
             }
         ]
     },
