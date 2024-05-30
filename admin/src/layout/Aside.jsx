@@ -71,8 +71,8 @@ export default function Aside(props: Props) {
             <AppBar
                 position="fixed"
                 sx={{
-                    width: { sm: `calc(100% - ${drawerWidth}px)` },
-                    ml: { sm: `${drawerWidth}px` },
+                    width: { md: `calc(100% - ${drawerWidth}px)` },
+                    ml: { md: `${drawerWidth}px` },
                 }}
             >
                 <Toolbar>
@@ -81,7 +81,7 @@ export default function Aside(props: Props) {
                         aria-label="open drawer"
                         edge="start"
                         onClick={handleDrawerToggle}
-                        sx={{ mr: 2, display: { sm: 'none' } }}
+                        sx={{ mr: 2, display: { md: 'none' } }}
                     >
                         <MenuIcon />
                     </IconButton>
@@ -92,7 +92,7 @@ export default function Aside(props: Props) {
             </AppBar>
             <Box
                 component="nav"
-                sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
+                sx={{ width: { md: drawerWidth }, flexShrink: { md: 0 } }}
                 aria-label="mailbox folders"
             >
                 {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
@@ -106,7 +106,7 @@ export default function Aside(props: Props) {
                         keepMounted: true, // Better open performance on mobile.
                     }}
                     sx={{
-                        display: { xs: 'block', sm: 'none' },
+                        display: { xs: 'block', md: 'none' },
                         '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
                     }}
                 >
@@ -115,7 +115,7 @@ export default function Aside(props: Props) {
                 <Drawer
                     variant="permanent"
                     sx={{
-                        display: { xs: 'none', sm: 'block' },
+                        display: { xs: 'none', md: 'block' },
                         '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
                     }}
                     open
@@ -125,7 +125,7 @@ export default function Aside(props: Props) {
             </Box>
             <Box
                 component="main"
-                sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
+                sx={{ flexGrow: 1, p: 3, width: { md: `calc(100% - ${drawerWidth}px)` } }}
             >
                 <Toolbar />
                 <Dashboard />
