@@ -67,7 +67,7 @@ const Footer = () => {
                 </div>
 
                 <div className="flex flex-col lg:items-center w-full md:mt-8 gap-4">
-                    <ul className="w-full flex items-center lg:justify-center gap-4">
+                    <ul className="w-full flex flex-col items-center lg:justify-center gap-4">
                         <List>
                             <Link to={`/`} className="text-color3 border-[1px] border-color3/50 p-2.5 flex rounded-full transition-all duration-300 ease-in hover:bg-gradient-to-tr from-color1 to-color2 hover:text-white">
                                 <FacebookLogo size={15} color="currentColor" weight="fill" />
@@ -85,10 +85,10 @@ const Footer = () => {
                         </List>
                     </ul>
 
-                    <Text as="p" className="text-base font-light text-color4">
+                    {/* <Text as="p" className="text-base font-light text-color4">
                         Discover Our App
                     </Text>
-                    <Image image={app} className="w-28" alt="App Download" as="a" href="/" />
+                    <Image image={app} className="w-28" alt="App Download" as="a" href="/" /> */}
                 </div>
             </section>
             <Text className="text-center bg-color4 text-white text-xs py-6 font-light">
